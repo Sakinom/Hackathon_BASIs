@@ -200,3 +200,32 @@ th{
   border-right: 1px solid #000;
 }
 
+.topic1_container_wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.topic1_contents{
+  width: 40%;
+  text-align: center;
+  box-shadow:  50px 10px 5px rgba(116, 129, 137, 0.5);
+  border-radius: 10px;
+}
+
+.topic1_content_top{
+  background-color: aqua;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.topic1_content_bottom{
+  background-color: gray;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.topic1_content_top, .topic1_content_bottom{
+  width: 100%;
+  padding: 24px;
+}
