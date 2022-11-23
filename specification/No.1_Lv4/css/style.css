@@ -22,6 +22,14 @@ table{
   border-collapse: collapse;
 }
 
+li{
+  list-style: none;
+}
+
+section{
+  margin-bottom: 80px;
+}
+
 /*ヘッダー*/
 .p-header{
   align-items: center;
@@ -34,13 +42,16 @@ table{
   top: 0;
   z-index: 100;
   align-items: center;
+  height: 50px;
 }
 
 /*ヘッダーのロゴ*/
 .p-header_logo{
-  height: 50px;
+  height: 100%;
   width: 138px;
-  position: relative;
+  display: flex;
+  /* position: relative; */
+  align-items: center;
   overflow: hidden;
 }
 
@@ -67,6 +78,8 @@ table{
 
 .p-header_nav_item{
   list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 /*hero部分の作成*/
@@ -130,3 +143,60 @@ table{
   letter-spacing: 0.2em;
   line-height: 1.8em;
 }
+
+.topic1, .topic2{
+  width: 100%;
+}
+
+.topic1_title_container{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.topic1_title_inner{
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  background-image: url(../img/noise.jpg);
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic1_title_inner::before{
+  background-color: rgba(100, 180, 230, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.topic1_title_text{
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  z-index: ;
+}
+
+/*table要素について*/
+tr:nth-child(even){
+  background-color:skyblue;
+}
+
+tr:nth-child(odd){
+  background-color: white;
+}
+
+table{
+  width: 60%;
+}
+
+th{
+  border-right: 1px solid #000;
+}
+
