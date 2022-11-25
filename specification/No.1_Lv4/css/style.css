@@ -9,7 +9,7 @@ tr, td{
 
 th{
   font-weight: normal;
-  width: 50px;
+  width: 150px;
   text-align: center;
   background-color: rgb(20, 160, 199);
   position: relative;
@@ -28,7 +28,7 @@ th::after{
 }
 
 td{
-  width: 150px;
+  width: 500px;
   text-align: center;
 }
 
@@ -200,7 +200,7 @@ section{
 }
 
 .topic1_title_text::before{
-  background: linear-gradient(to right, blue, skyblue, green);
+  background: linear-gradient(to right, blue, skyblue, lavender);
   position: absolute;
   content: "";
   width: 20%;
@@ -226,6 +226,21 @@ table{
   border-right: 1px solid #000;
 } */
 
+.profile{
+  display: flex;
+  justify-content: center;
+}
+
+.profile_img{
+}
+
+.profile_img img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .topic1_container_wrapper{
   display: flex;
   justify-content: center;
@@ -245,7 +260,6 @@ table{
   width: 100%;
   padding: 24px;
   box-sizing: border-box;
-
 }
 
 .topic1_content_top{
@@ -288,4 +302,28 @@ table{
   /* object-fit: contain; */
   height: 15px;
   /* border: 1px solid black; */
+}
+
+/*右下固定のインスタグラム*/
+.l-sns_instagram{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: flex; */
+  overflow: hidden;
+}
+
+.l-sns_instagram a img{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+}
+
+.l-sns_instagram a img:hover{
+  transform: scale(1.2);
 }
