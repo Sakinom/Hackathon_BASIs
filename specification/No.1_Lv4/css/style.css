@@ -1,3 +1,7 @@
+html{
+  scroll-padding-top: 50px;
+}
+
 table, tr, th, td{
   /* border-bottom: 1px solid black; */
   border: 2px solid white;
@@ -282,9 +286,9 @@ table{
 }
 
 .topic1_content_top{
-  background-color: rgb(95, 107, 234);
+  background-color: #87CEEB;
   border-radius: 10px 10px 0px 0px;
-  color: white;
+  color: black;
 }
 
 .topic1_content_answer_back{
@@ -302,7 +306,7 @@ table{
   position: relative;
   padding: 0;
   width: 100%;
-  color: white;
+  color: black;
 }
 
 .topic1_content_bottom_door{
@@ -311,7 +315,7 @@ table{
   height: 100%;
   /* margin: auto; */
   padding: 24px;
-  background-color: rgb(167, 129, 232);
+  background-color: #FFC0CB;
   transition: 1s;
   transform-origin: top;
   border-radius: 0px 0px 10px 10px;
