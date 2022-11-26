@@ -9,7 +9,7 @@ tr, td{
 
 th{
   font-weight: normal;
-  width: 150px;
+  min-width: 150px;
   text-align: center;
   background-color: rgb(20, 160, 199);
   position: relative;
@@ -112,15 +112,6 @@ section{
   position: relative;
 }
 
-.hero_img_left {
-  /* height: 100%; */
-  /* display: flex;
-  justify-content: center; */
-  /* overflow: hidden; */
-  /* width: calc(100/2%); */
-  /* width: 100%; */
-}
-
 .hero_img_left img{
   object-fit: cover;
   width: calc(100/3*2vw);
@@ -163,35 +154,20 @@ section{
   position: relative;
   /* position: relative;
   z-index: 5; */
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
 }
 
-.anim_box {
-  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
-  border-radius: 5px;
-  max-width: 400px;
-  height: 250px;
-}
-
-.anim_box.poyopoyo {
-  animation: poyopoyo 2s ease-out infinite;
-  opacity: 1;
-}
-@keyframes poyopoyo {
-  0%, 40%, 60%, 80% {
-    transform: scale(1.0);
+@keyframes loading {
+  0% {
+    transform: scale(0);
   }
-  50%, 70% {
-    transform: scale(0.95);
+  100% {
+    transform: scale(1);
   }
 }
-
-/* .hero_title::before{
-  content: 'Title';
-  position: absolute;
-  font-size: 2em;
-  font-style: italic;
-  color:rgb(167, 129, 232);
-} */
 
 .topic1, .topic2{
   width: 100%;
@@ -311,10 +287,19 @@ table{
   color: white;
 }
 
+.topic1_content_answer_back{
+  position: relative;
+}
+
+.topic1_content_answer{
+  margin: 0;
+  position: absolute;
+}
+
 .topic1_content_bottom{
   background-color: rgb(255, 200, 0);
   border-radius: 0px 0px 10px 10px;
-  /* position: relative; */
+  position: relative;
   padding: 0;
   width: 100%;
   color: white;
@@ -330,6 +315,8 @@ table{
   transition: 1s;
   transform-origin: top;
   border-radius: 0px 0px 10px 10px;
+  /* z-index: 5; */
+  position: relative;
 }
 
 .topic1_content_bottom_door:hover{
