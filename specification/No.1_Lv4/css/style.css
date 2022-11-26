@@ -313,7 +313,7 @@ table{
 .topic1_content_top{
   background-color: #87CEEB;
   border-radius: 10px 10px 0px 0px;
-  color: white;
+  color: black;
 }
 
 .topic1_content_bottom{
@@ -322,7 +322,7 @@ table{
   /* position: relative; */
   padding: 0;
   width: 100%;
-  color: white;
+  color: black;
 }
 
 .topic1_content_bottom_door{
