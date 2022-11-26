@@ -58,6 +58,7 @@ section{
   z-index: 100;
   align-items: center;
   height: 50px;
+  box-shadow: 0px 2px 10px #666;
 }
 
 /*ヘッダーのロゴ*/
@@ -157,8 +158,31 @@ section{
 .hero_title{
   letter-spacing: 0.2em;
   line-height: 1.8em;
+  font-size: 64px;
+  font-style: italic;
+  position: relative;
   /* position: relative;
   z-index: 5; */
+}
+
+.anim_box {
+  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+  border-radius: 5px;
+  max-width: 400px;
+  height: 250px;
+}
+
+.anim_box.poyopoyo {
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
 }
 
 /* .hero_title::before{
@@ -253,7 +277,7 @@ table{
 
 .topic1_container{
   width: 100%;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   justify-content: center;
   display: flex;
 }
@@ -347,4 +371,14 @@ table{
 
 .l-sns_instagram a img:hover{
   transform: scale(1.2);
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
