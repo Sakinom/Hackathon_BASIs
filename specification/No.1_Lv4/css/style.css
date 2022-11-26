@@ -287,10 +287,19 @@ table{
   color: white;
 }
 
+.topic1_content_answer_back{
+  position: relative;
+}
+
+.topic1_content_answer{
+  margin: 0;
+  position: absolute;
+}
+
 .topic1_content_bottom{
   background-color: rgb(255, 200, 0);
   border-radius: 0px 0px 10px 10px;
-  /* position: relative; */
+  position: relative;
   padding: 0;
   width: 100%;
   color: white;
@@ -306,6 +315,8 @@ table{
   transition: 1s;
   transform-origin: top;
   border-radius: 0px 0px 10px 10px;
+  /* z-index: 5; */
+  position: relative;
 }
 
 .topic1_content_bottom_door:hover{
