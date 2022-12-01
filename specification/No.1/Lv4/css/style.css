@@ -1,0 +1,377 @@
+html{
+  scroll-padding-top: 50px;
+}
+
+table, tr, th, td{
+  /* border-bottom: 1px solid black; */
+  border: 2px solid white;
+}
+
+tr, td{
+  height: 40px;
+}
+
+th{
+  font-weight: normal;
+  min-width: 150px;
+  text-align: center;
+  background-color: rgb(20, 160, 199);
+  position: relative;
+}
+
+th::after{
+  content: "";
+  position: absolute;
+  border-left: 10px solid rgb(20, 160, 199);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  /* border: 5px solid transparent; */
+  /* transform: translateY(-50%); */
+  right: -10px;
+  top: calc(50%-10px);
+}
+
+td{
+  width: 500px;
+  text-align: center;
+}
+
+table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+li{
+  list-style: none;
+}
+
+section{
+  margin-bottom: 80px;
+}
+
+/*ヘッダー*/
+.p-header{
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  padding: 0px 24px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 2px 10px #666;
+}
+
+/*ヘッダーのロゴ*/
+.p-header_logo{
+  height: 100%;
+  width: 138px;
+  display: flex;
+  /* position: relative; */
+  align-items: center;
+  overflow: hidden;
+}
+
+.p-header_logo img{
+  object-fit: cover;
+  width: 100%;
+  /* position: absolute; */
+  top: -60%;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+
+/*ナビゲーション*/
+.p-header_nav{
+  margin: 0 0 0 auto;
+}
+
+.p-header_nav_list{
+  display: flex;
+  gap: 30px;
+  font-size: 10px;
+  justify-content: flex-end;
+}
+
+.p-header_nav_item{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/*hero部分の作成*/
+.hero {
+  width: 100%;
+}
+
+.hero_img {
+  height: 650px;
+  width: 100%;
+  overflow: hidden;
+  /* object-fit: cover; */
+  display: flex;
+  position: relative;
+}
+
+.hero_img_left img{
+  object-fit: cover;
+  width: calc(100/3*2vw);
+  object-position: 0% 0%;
+  /* width: calc(100/2%); */
+  height: 100%;
+}
+
+.hero_img_right img{
+  object-fit: cover;
+  width: calc(100/3vw);
+  height: 100%;
+}
+
+.hero_img::before {
+  background-color: rgba(171, 205, 26, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.hero_text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.hero_title{
+  letter-spacing: 0.2em;
+  line-height: 1.8em;
+  font-size: 64px;
+  font-style: italic;
+  position: relative;
+  /* position: relative;
+  z-index: 5; */
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.topic1, .topic2{
+  width: 100%;
+}
+
+.topic_title_container{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.topic_title_inner{
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+  /* background-image: url(../img/noise.jpg); */
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.topic_title_inner::before{
+  /* background-color: rgba(100, 180, 230, 0.5); */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.topic_title_text{
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  /* z-index: ; */
+  position: relative;
+}
+
+.topic_title_text::before{
+  background: linear-gradient(to right, lavender, rgb(11, 160, 219), lavender);
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2px;
+  bottom: 0;
+  left: 40%;
+}
+
+/*table要素について*/
+tr:nth-child(even){
+  background-color:skyblue;
+}
+
+tr:nth-child(odd){
+  background-color: white;
+}
+
+table{
+  width: 60%;
+}
+
+/* th{
+  border-right: 1px solid #000;
+} */
+
+.profile{
+  display: flex;
+  justify-content: center;
+}
+
+.profile_img{
+}
+
+.profile_img img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.topic1_container{
+  width: 100%;
+  /* margin-top: 80px; */
+  justify-content: center;
+  display: flex;
+}
+
+.topic1_contents_package{
+  display: flex;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+/* .topic1_contents:nth-child(n+2):nth-child(-n+3){
+  transform: rotate(45deg);
+} */
+
+.topic1_contents{
+  width: 200px;
+  text-align: center;
+  box-shadow:  5px 10px 5px rgba(116, 129, 137, 0.5);
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.topic1_content_top, .topic1_content_bottom{
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.topic1_content_top{
+  background-color: #87CEEB;
+  border-radius: 10px 10px 0px 0px;
+  color: black;
+}
+
+.topic1_content_answer_back{
+  position: relative;
+}
+
+.topic1_content_answer{
+  margin: 20px 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.topic1_content_bottom{
+  background-color: rgb(255, 200, 0);
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  color: black;
+}
+
+.topic1_content_bottom_door{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 24px;
+  background-color: #FFC0CB;
+  transition: 1s;
+  transform-origin: top;
+  border-radius: 0px 0px 10px 10px;
+  /* z-index: 5; */
+  position: relative;
+}
+
+.topic1_content_bottom_door:hover{
+  transform: rotateX(-80deg);
+}
+
+.section_line{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.section_line_img{
+  background: url(../img/80887712ca6d2cf915bb52c1edaffb8c_w.jpeg) repeat-x;
+  background-size: 150px;
+  /* object-fit: contain; */
+  height: 15px;
+  /* border: 1px solid black; */
+}
+
+/*右下固定のインスタグラム*/
+.l-sns_instagram{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: flex; */
+  overflow: hidden;
+}
+
+.l-sns_instagram a img{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+}
+
+.l-sns_instagram a img:hover{
+  transform: scale(1.2);
+}
+
+.footer{
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
