@@ -164,14 +164,14 @@ section{
   animation-direction: alternate;
 }
 
-@keyframes loading {
+/* @keyframes loading {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .topic1, .topic2{
   width: 100%;

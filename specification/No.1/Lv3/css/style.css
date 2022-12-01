@@ -3,8 +3,8 @@ html{
 }
 
 table, tr, th, td{
-  /* border-bottom: 1px solid black; */
-  border: 2px solid white;
+  border-bottom: 1px solid black;
+  /* border: 2px solid white; */
 }
 
 tr, td{
@@ -15,20 +15,8 @@ th{
   font-weight: normal;
   min-width: 150px;
   text-align: center;
-  background-color: rgb(20, 160, 199);
   position: relative;
-}
-
-th::after{
-  content: "";
-  position: absolute;
-  border-left: 10px solid rgb(20, 160, 199);
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  /* border: 5px solid transparent; */
-  /* transform: translateY(-50%); */
-  right: -10px;
-  top: calc(50%-10px);
+  border-right: 1px solid black;
 }
 
 td{
@@ -39,6 +27,7 @@ td{
 table{
   margin: 0 auto;
   border-collapse: collapse;
+    border: 2px solid white;
 }
 
 li{
@@ -62,7 +51,6 @@ section{
   z-index: 100;
   align-items: center;
   height: 50px;
-  box-shadow: 0px 2px 10px #666;
 }
 
 /*ヘッダーのロゴ*/
@@ -131,7 +119,7 @@ section{
 }
 
 .hero_img::before {
-  background-color: rgba(116, 129, 137, 0.5);
+  background-color: rgba(171, 205, 26, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -154,7 +142,7 @@ section{
   letter-spacing: 0.2em;
   line-height: 1.8em;
   font-size: 64px;
-  font-style: italic;
+  /* font-style: italic; */
   position: relative;
   /* position: relative;
   z-index: 5; */
@@ -164,14 +152,14 @@ section{
   animation-direction: alternate;
 }
 
-@keyframes loading {
+/* @keyframes loading {
   0% {
     transform: scale(0);
   }
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .topic1, .topic2{
   width: 100%;
@@ -297,9 +285,11 @@ table{
 }
 
 .topic1_content_answer{
-  margin: 20px 0px;
-  position: absolute;
+  margin: 0px 0px;
+  /* position: absolute; */
   width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
 .topic1_content_bottom{
@@ -323,6 +313,7 @@ table{
   border-radius: 0px 0px 10px 10px;
   /* z-index: 5; */
   position: relative;
+  display: none;
 }
 
 .topic1_content_bottom_door:hover{
@@ -362,9 +353,9 @@ table{
   width: 60px;
 }
 
-.l-sns_instagram a img:hover{
+/* .l-sns_instagram a img:hover{
   transform: scale(1.2);
-}
+} */
 
 .footer{
   width: 100%;

@@ -3,8 +3,8 @@ html{
 }
 
 table, tr, th, td{
-  /* border-bottom: 1px solid black; */
-  border: 2px solid white;
+  border-bottom: 1px solid black;
+  /* border: 2px solid white; */
 }
 
 tr, td{
@@ -15,20 +15,8 @@ th{
   font-weight: normal;
   min-width: 150px;
   text-align: center;
-  background-color: rgb(20, 160, 199);
   position: relative;
-}
-
-th::after{
-  content: "";
-  position: absolute;
-  border-left: 10px solid rgb(20, 160, 199);
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  /* border: 5px solid transparent; */
-  /* transform: translateY(-50%); */
-  right: -10px;
-  top: calc(50%-10px);
+  border-right: 1px solid black;
 }
 
 td{
@@ -39,6 +27,8 @@ td{
 table{
   margin: 0 auto;
   border-collapse: collapse;
+  border: 2px solid white;
+  display: none;
 }
 
 li{
@@ -62,7 +52,6 @@ section{
   z-index: 100;
   align-items: center;
   height: 50px;
-  box-shadow: 0px 2px 10px #666;
 }
 
 /*ヘッダーのロゴ*/
@@ -87,6 +76,7 @@ section{
 /*ナビゲーション*/
 .p-header_nav{
   margin: 0 0 0 auto;
+  display: none;
 }
 
 .p-header_nav_list{
@@ -130,15 +120,15 @@ section{
   height: 100%;
 }
 
-.hero_img::before {
-  background-color: rgba(116, 129, 137, 0.5);
+/* .hero_img::before {
+  background-color: rgba(171, 205, 26, 0.5);
   height: 100%;
   width: 100%;
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-}
+} */
 
 .hero_text {
   position: absolute;
@@ -154,14 +144,14 @@ section{
   letter-spacing: 0.2em;
   line-height: 1.8em;
   font-size: 64px;
-  font-style: italic;
+  /* font-style: italic; */
   position: relative;
   /* position: relative;
   z-index: 5; */
-  animation-name: loading;
+  /* animation-name: loading;
   animation-iteration-count: infinite;
   animation-duration: 1s;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 @keyframes loading {
@@ -214,23 +204,25 @@ section{
 }
 
 .topic_title_text::before{
-  background: linear-gradient(to right, lavender, rgb(11, 160, 219), lavender);
+  /* background: linear-gradient(to right, lavender, rgb(11, 160, 219), lavender); */
+  background-color: black;
   position: absolute;
   content: "";
   width: 20%;
   height: 2px;
   bottom: 0;
   left: 40%;
+  display: none;
 }
 
 /*table要素について*/
-tr:nth-child(even){
+/* tr:nth-child(even){
   background-color:skyblue;
 }
 
 tr:nth-child(odd){
   background-color: white;
-}
+} */
 
 table{
   width: 60%;
@@ -252,7 +244,7 @@ table{
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .topic1_container{
@@ -275,8 +267,8 @@ table{
 .topic1_contents{
   width: 200px;
   text-align: center;
-  box-shadow:  5px 10px 5px rgba(116, 129, 137, 0.5);
-  border-radius: 10px;
+  /* box-shadow:  5px 10px 5px rgba(116, 129, 137, 0.5); */
+  /* border-radius: 10px; */
   height: fit-content;
 }
 
@@ -288,7 +280,7 @@ table{
 
 .topic1_content_top{
   background-color: #87CEEB;
-  border-radius: 10px 10px 0px 0px;
+  /* border-radius: 10px 10px 0px 0px; */
   color: black;
 }
 
@@ -297,14 +289,16 @@ table{
 }
 
 .topic1_content_answer{
-  margin: 20px 0px;
-  position: absolute;
+  margin: 0px 0px;
+  /* position: absolute; */
   width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
 .topic1_content_bottom{
   background-color: rgb(255, 200, 0);
-  border-radius: 0px 0px 10px 10px;
+  /* border-radius: 0px 0px 10px 10px; */
   position: relative;
   padding: 0;
   width: 100%;
@@ -323,6 +317,7 @@ table{
   border-radius: 0px 0px 10px 10px;
   /* z-index: 5; */
   position: relative;
+  display: none;
 }
 
 .topic1_content_bottom_door:hover{
@@ -351,6 +346,7 @@ table{
   /* justify-content: center; */
   /* display: flex; */
   overflow: hidden;
+  display: none;
 }
 
 .l-sns_instagram a img{
