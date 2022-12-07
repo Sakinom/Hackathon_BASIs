@@ -131,7 +131,7 @@ section{
 }
 
 .hero_img::before {
-  background-color: rgba(171, 205, 26, 0.5);
+  background-color: rgba(199, 205, 26, 0.538);
   height: 100%;
   width: 100%;
   position: absolute;
